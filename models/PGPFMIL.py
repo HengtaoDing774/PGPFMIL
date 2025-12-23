@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-# from nystrom_attention.nystrom_attention import NystromAttention
+
 
 from math import ceil
 import torch
