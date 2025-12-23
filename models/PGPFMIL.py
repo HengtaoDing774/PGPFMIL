@@ -377,9 +377,9 @@ class PPEG(nn.Module):
         return x
 
 
-class TransMIL(nn.Module):
+class PGPFMIL(nn.Module):
     def __init__(self, n_classes):
-        super(TransMIL, self).__init__()
+        super(PGPFMIL, self).__init__()
         self.pos_layer = PPEG(dim=512)
         self._fc1 = nn.Sequential(nn.Linear(1000, 512), nn.ReLU())
         self.cls_token = nn.Parameter(torch.randn(1, 1, 512))
